@@ -1,0 +1,334 @@
+{
+  "benchmark": {
+    "case_count": 50,
+    "id": "ifeval",
+    "inverted_grade": false,
+    "revision": "1cba769ece27f7ef"
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "rng_seed": 20261015
+  },
+  "candidates": {
+    "coverage": {
+      "coverage": 1.0,
+      "engine_score": 0.92,
+      "notional_usd_per_case": 0.00204207,
+      "notional_usd_total": 0.102104,
+      "run_cases": 50,
+      "score": 0.92,
+      "score_ci95": [
+        0.84,
+        0.98
+      ],
+      "tokens_in_per_case": 1612.2,
+      "tokens_out_per_case": 1092.7,
+      "wall_s_per_case_mean": 9.783
+    },
+    "judge_pick": {
+      "coverage": 1.0,
+      "engine_score": 0.98,
+      "notional_usd_per_case": 0.00166334,
+      "notional_usd_total": 0.083167,
+      "run_cases": 50,
+      "score": 0.98,
+      "score_ci95": [
+        0.94,
+        1.0
+      ],
+      "tokens_in_per_case": 1680.8,
+      "tokens_out_per_case": 828.8,
+      "wall_s_per_case_mean": 9.164
+    },
+    "solo_default": {
+      "coverage": 1.0,
+      "engine_score": 0.94,
+      "notional_usd_per_case": 0.00042896,
+      "notional_usd_total": 0.021448,
+      "run_cases": 50,
+      "score": 0.94,
+      "score_ci95": [
+        0.86,
+        1.0
+      ],
+      "tokens_in_per_case": 59.1,
+      "tokens_out_per_case": 276.1,
+      "wall_s_per_case_mean": 5.865
+    },
+    "solo_s0": {
+      "coverage": 1.0,
+      "engine_score": 0.96,
+      "notional_usd_per_case": 0.00042569,
+      "notional_usd_total": 0.021284,
+      "run_cases": 50,
+      "score": 0.96,
+      "score_ci95": [
+        0.9,
+        1.0
+      ],
+      "tokens_in_per_case": 59.1,
+      "tokens_out_per_case": 273.9,
+      "wall_s_per_case_mean": 5.967
+    },
+    "solo_s1": {
+      "coverage": 1.0,
+      "engine_score": 0.98,
+      "notional_usd_per_case": 0.00042308,
+      "notional_usd_total": 0.021154,
+      "run_cases": 50,
+      "score": 0.98,
+      "score_ci95": [
+        0.94,
+        1.0
+      ],
+      "tokens_in_per_case": 59.1,
+      "tokens_out_per_case": 272.2,
+      "wall_s_per_case_mean": 5.861
+    },
+    "solo_s2": {
+      "coverage": 1.0,
+      "engine_score": 0.94,
+      "notional_usd_per_case": 0.00042707,
+      "notional_usd_total": 0.021354,
+      "run_cases": 50,
+      "score": 0.94,
+      "score_ci95": [
+        0.86,
+        1.0
+      ],
+      "tokens_in_per_case": 59.1,
+      "tokens_out_per_case": 274.9,
+      "wall_s_per_case_mean": 5.732
+    },
+    "synth_default": {
+      "coverage": 1.0,
+      "engine_score": 0.94,
+      "notional_usd_per_case": 0.0020562,
+      "notional_usd_total": 0.10281,
+      "run_cases": 50,
+      "score": 0.94,
+      "score_ci95": [
+        0.86,
+        1.0
+      ],
+      "tokens_in_per_case": 1550.9,
+      "tokens_out_per_case": 1112.3,
+      "wall_s_per_case_mean": 9.546
+    }
+  },
+  "case_ids": [
+    102,
+    122,
+    1000,
+    1001,
+    1005,
+    1012,
+    1019,
+    1021,
+    1040,
+    1051,
+    1069,
+    1072,
+    1075,
+    1082,
+    1087,
+    1092,
+    1094,
+    1098,
+    1107,
+    1108,
+    1122,
+    1127,
+    1128,
+    1129,
+    1130,
+    1131,
+    1132,
+    1137,
+    1139,
+    1147,
+    1148,
+    1153,
+    1154,
+    1162,
+    1174,
+    1180,
+    1187,
+    1203,
+    1216,
+    1217,
+    1219,
+    1220,
+    1233,
+    1236,
+    1237,
+    1242,
+    1246,
+    1248,
+    1251,
+    1258
+  ],
+  "comparisons": {
+    "coverage vs synth_default": {
+      "ci95": [
+        -0.1,
+        0.04
+      ],
+      "mcnemar_exact": {
+        "only_first": 1,
+        "only_second": 2,
+        "p_value": 1.0
+      },
+      "mean_diff": -0.02
+    },
+    "judge_pick vs oracle": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_diff": 0.0,
+      "note": "oracle is a per-case max, McNemar not applicable"
+    },
+    "synth_default vs best_single(solo_s1)": {
+      "ci95": [
+        -0.1,
+        0.0
+      ],
+      "mcnemar_exact": {
+        "only_first": 0,
+        "only_second": 2,
+        "p_value": 0.5
+      },
+      "mean_diff": -0.04
+    },
+    "synth_default vs solo_default": {
+      "ci95": [
+        -0.08,
+        0.08
+      ],
+      "mcnemar_exact": {
+        "only_first": 2,
+        "only_second": 2,
+        "p_value": 1.0
+      },
+      "mean_diff": 0.0
+    }
+  },
+  "decomposition": {
+    "best_single": "solo_s1",
+    "best_single_score": 0.98,
+    "beta": 0.02,
+    "beta_count": 1,
+    "beta_cp95": [
+      0.000506,
+      0.10647
+    ],
+    "fail_definition": "score < 1.0 for all three draws",
+    "oracle": 0.98,
+    "oracle_ci95": [
+      0.94,
+      1.0
+    ],
+    "oracle_gain": 0.0,
+    "oracle_gain_ci95": [
+      0.0,
+      0.0
+    ],
+    "panel": [
+      "solo_s0",
+      "solo_s1",
+      "solo_s2"
+    ],
+    "scores_binary": true,
+    "selection_ceiling": 0.98,
+    "selection_ceiling_cp95": [
+      0.89353,
+      0.999494
+    ],
+    "zero_dollar_certificate_max_gain_over_best": 0.019494
+  },
+  "excluded_case_ids": [],
+  "instruction_level": {
+    "best_single_instruction_strict": 0.986842,
+    "coverage": {
+      "instruction_loose": 0.947368,
+      "instruction_strict": 0.947368,
+      "prompt_loose": 0.92
+    },
+    "efficiency_coverage": "not available (union - best <= 0)",
+    "efficiency_synth_default": "not available (union - best <= 0)",
+    "judge_pick": {
+      "instruction_loose": 0.986842,
+      "instruction_strict": 0.986842,
+      "prompt_loose": 0.98
+    },
+    "solo_default": {
+      "instruction_loose": 0.960526,
+      "instruction_strict": 0.960526,
+      "prompt_loose": 0.94
+    },
+    "solo_s0": {
+      "instruction_loose": 0.973684,
+      "instruction_strict": 0.973684,
+      "prompt_loose": 0.96
+    },
+    "solo_s1": {
+      "instruction_loose": 0.986842,
+      "instruction_strict": 0.986842,
+      "prompt_loose": 0.98
+    },
+    "solo_s2": {
+      "instruction_loose": 0.960526,
+      "instruction_strict": 0.960526,
+      "prompt_loose": 0.94
+    },
+    "synth_default": {
+      "instruction_loose": 0.960526,
+      "instruction_strict": 0.960526,
+      "prompt_loose": 0.94
+    },
+    "union_oracle_instruction_strict": 0.986842
+  },
+  "latency": "per-case provider latency and critical-path latency not available (free-tier gateway attributes no call latency); wall_s_per_case_mean = run duration / cases, all candidates concurrent, includes contention",
+  "model": "gemini-cli/gemini-3.1-flash-lite",
+  "n_cases_analysed": 50,
+  "n_excluded": 0,
+  "notional_price_usd_per_mtok": {
+    "input": 0.25,
+    "output": 1.5
+  },
+  "raw_report": "ifeval_main.json",
+  "raw_report_sha256": "ab6198936ab9d1febfb7a28a1a09bb700b0d6696a8430fb0a4f1b4e9ceef955a",
+  "synthesis": {
+    "coverage": {
+      "damage": 3,
+      "rescue": 0,
+      "score": 0.92,
+      "surplus_ci95": [
+        -0.14,
+        0.0
+      ],
+      "surplus_vs_oracle": -0.06
+    },
+    "judge_pick": {
+      "damage": 0,
+      "rescue": 0,
+      "score": 0.98,
+      "surplus_ci95": [
+        0.0,
+        0.0
+      ],
+      "surplus_vs_oracle": 0.0
+    },
+    "synth_default": {
+      "damage": 2,
+      "rescue": 0,
+      "score": 0.94,
+      "surplus_ci95": [
+        -0.1,
+        0.0
+      ],
+      "surplus_vs_oracle": -0.04
+    }
+  }
+}

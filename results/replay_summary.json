@@ -1,0 +1,59 @@
+{
+  "_max_abs_difference": 0.02,
+  "coverage": {
+    "cases": 50,
+    "difference": 0.02,
+    "main_score": 0.92,
+    "per_case_agreement": 0.98,
+    "replay_score": 0.94,
+    "same_case_ids": true
+  },
+  "judge_pick": {
+    "cases": 50,
+    "difference": 0.0,
+    "main_score": 0.98,
+    "per_case_agreement": 1.0,
+    "replay_score": 0.98,
+    "same_case_ids": true
+  },
+  "solo_default": {
+    "cases": 50,
+    "difference": 0.02,
+    "main_score": 0.94,
+    "per_case_agreement": 0.94,
+    "replay_score": 0.96,
+    "same_case_ids": true
+  },
+  "solo_s0": {
+    "cases": 50,
+    "difference": 0.0,
+    "main_score": 0.96,
+    "per_case_agreement": 1.0,
+    "replay_score": 0.96,
+    "same_case_ids": true
+  },
+  "solo_s1": {
+    "cases": 50,
+    "difference": -0.02,
+    "main_score": 0.98,
+    "per_case_agreement": 0.98,
+    "replay_score": 0.96,
+    "same_case_ids": true
+  },
+  "solo_s2": {
+    "cases": 50,
+    "difference": 0.02,
+    "main_score": 0.94,
+    "per_case_agreement": 0.98,
+    "replay_score": 0.96,
+    "same_case_ids": true
+  },
+  "synth_default": {
+    "cases": 50,
+    "difference": 0.02,
+    "main_score": 0.94,
+    "per_case_agreement": 0.94,
+    "replay_score": 0.96,
+    "same_case_ids": true
+  }
+}

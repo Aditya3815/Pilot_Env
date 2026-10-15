@@ -1,0 +1,20 @@
+# Mini pilot (free tier). The originally planned 4-model / 3-provider design was dropped (no paid route available).
+engine_url: http://127.0.0.1:9108
+scoreboard_url: http://127.0.0.1:9106
+benchmark: ifeval
+model: gemini-cli/gemini-3.1-flash-lite   # the only route usable with the free Gemini AI Studio key
+n_samples: 3
+sample_temperature: 0.7
+budget:
+  hard_cap_usd: 10.0
+  confirm_above_run_usd: 2.0
+  confirm_above_cap_fraction: 0.7
+free_tier_routes:                          # calls report cost_usd=None; recorded as $0 + tokens
+  - gemini-cli/gemini-3.1-flash-lite
+bootstrap:
+  resamples: 10000
+  rng_seed: 20261015
+n_main: 50                                 # first 50 IFEval cases (limit=50); fixed before the main run
+notional_price_usd_per_mtok:               # Google list price, paid tier, ai.google.dev/gemini-api/docs/pricing, 2026-10-15
+  input: 0.25
+  output: 1.50
